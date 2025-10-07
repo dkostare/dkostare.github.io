@@ -50,7 +50,7 @@ nav a:hover {
 
 .hero {
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-                url('header.jpeg') center/cover;
+                url('https://github.com/dkostare/dkostare.github.io/blob/main/header.jpg') center/cover;
     height: 500px;
     display: flex;
     align-items: center;
