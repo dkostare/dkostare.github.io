@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taverna Olympia - Greek Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Taverna Olympia</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Authentic Greek Cuisine</h2>
+            <p>Experience the flavors of Greece</p>
+        </div>
+    </section>
+
+    <section id="gallery" class="carousel-section">
+        <h2>Our Dishes</h2>
+        <div class="carousel-container">
+            <button class="carousel-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+            <div class="carousel">
+                <img src="https://images.unsplash.com/photo-1633945274309-2c4c9ce3c0bf?w=800" alt="Gyro">
+                <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=800" alt="Moussaka">
+                <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800" alt="Greek Salad">
+                <img src="https://images.unsplash.com/photo-1598511726623-d2e9996892f0?w=800" alt="Souvlaki">
+                <img src="https://images.unsplash.com/photo-1601050690117-f31a4638f0f2?w=800" alt="Baklava">
+            </div>
+            <button class="carousel-btn next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+        <div class="carousel-dots">
+            <span class="dot" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+    </section>
+
+    <section id="menu" class="menu-section">
+        <h2>Our Menu</h2>
+        <p>View our full menu selection</p>
+        <a href="menu.pdf" class="menu-btn" target="_blank">View PDF Menu</a>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Visit Us</h2>
+        <p>456 Mediterranean Ave, Food City</p>
+        <p>Phone: (555) 123-4567</p>
+        <p>Hours: Mon-Sun 11:00 AM - 10:00 PM</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Taverna Olympia. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
