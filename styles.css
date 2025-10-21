@@ -70,14 +70,13 @@ nav a:focus {
 }
 
 .hero-content h2 {
-    font-size: 2rem; /* Smaller heading */
-    padding-top: 100px;
+    font-size: 2rem;
     margin-bottom: 0.5rem;
 }
 
 .hero-content p {
     font-size: 1rem;
-    padding: 100px 1rem 0 1rem;
+    padding: 0 1rem;
 }
 
 /* Sections */
