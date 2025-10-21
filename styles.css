@@ -68,6 +68,10 @@ nav a:focus {
     text-align: center;
     color: white;
 }
+.hero-content {
+    padding-top: 100px;
+    text-align: center;
+}
 
 .hero-content h2 {
     font-size: 2rem;
