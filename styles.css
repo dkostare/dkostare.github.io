@@ -71,11 +71,13 @@ nav a:focus {
 
 .hero-content h2 {
     font-size: 2rem; /* Smaller heading */
+    padding-top: 100px;
     margin-bottom: 0.5rem;
 }
 
 .hero-content p {
     font-size: 1rem; /* Smaller paragraph */
+    padding-top: 100px;
     padding: 0 1rem;
 }
 
