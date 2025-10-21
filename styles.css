@@ -4,16 +4,20 @@
     box-sizing: border-box;
 }
 
+/* Base styles for mobile */
 body {
     font-family: 'Georgia', serif;
     line-height: 1.6;
     color: #333;
+    font-size: 16px; /* Base font size for readability */
+    background-color: #f5f5f5;
 }
 
+/* Header and Navigation */
 header {
     background-color: #2c1810;
     color: white;
-    padding: 1rem 0;
+    padding: 0.5rem 0; /* Reduced padding for mobile */
     position: sticky;
     top: 0;
     z-index: 100;
@@ -21,37 +25,43 @@ header {
 
 nav {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column; /* Stack nav items vertically on mobile */
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
+    max-width: 100%;
+    padding: 0 1rem;
 }
 
 nav h1 {
-    font-size: 2rem;
+    font-size: 1.5rem; /* Smaller logo text */
+    margin: 0.5rem 0;
 }
 
 nav ul {
     display: flex;
+    flex-wrap: wrap; /* Allow wrapping for long menus */
     list-style: none;
-    gap: 2rem;
+    gap: 1rem;
+    justify-content: center;
 }
 
 nav a {
     color: white;
     text-decoration: none;
+    font-size: 1rem; /* Smaller nav links */
+    padding: 0.5rem; /* Touch-friendly tap area */
     transition: color 0.3s;
 }
 
-nav a:hover {
+nav a:hover,
+nav a:focus {
     color: #d4af37;
 }
 
+/* Hero Section */
 .hero {
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-                url(https://raw.githubusercontent.com/dkostare/dkostare.github.io/main/header.jpg) center/cover;
-    height: 500px;
+                ur[](https://raw.githubusercontent.com/dkostare/dkostare.github.io/main/header.jpg) center/cover;
+    min-height: 300px; /* Reduced height for mobile */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -60,30 +70,37 @@ nav a:hover {
 }
 
 .hero-content h2 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+    font-size: 2rem; /* Smaller heading */
+    margin-bottom: 0.5rem;
 }
 
 .hero-content p {
-    font-size: 1.5rem;
+    font-size: 1rem; /* Smaller paragraph */
+    padding: 0 1rem;
 }
 
-.carousel-section, .menu-section, .contact-section {
-    max-width: 1200px;
-    margin: 4rem auto;
-    padding: 0 2rem;
+/* Sections */
+.carousel-section,
+.menu-section,
+.contact-section {
+    max-width: 100%;
+    margin: 2rem auto; /* Reduced margin */
+    padding: 0 1rem;
     text-align: center;
 }
 
-.carousel-section h2, .menu-section h2, .contact-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
+.carousel-section h2,
+.menu-section h2,
+.contact-section h2 {
+    font-size: 1.8rem; /* Smaller headings */
+    margin-bottom: 1rem;
     color: #2c1810;
 }
 
+/* Carousel */
 .carousel-container {
     position: relative;
-    max-width: 800px;
+    max-width: 100%; /* Full width on mobile */
     margin: 0 auto;
     overflow: hidden;
 }
@@ -96,7 +113,7 @@ nav a:hover {
 .carousel img {
     width: 100%;
     flex-shrink: 0;
-    height: 500px;
+    height: 250px; /* Reduced height for mobile */
     object-fit: cover;
 }
 
@@ -107,13 +124,19 @@ nav a:hover {
     background-color: rgba(0,0,0,0.5);
     color: white;
     border: none;
-    padding: 1rem;
+    padding: 0.5rem; /* Smaller buttons */
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    width: 40px; /* Touch-friendly size */
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition: background-color 0.3s;
 }
 
-.carousel-btn:hover {
+.carousel-btn:hover,
+.carousel-btn:focus {
     background-color: rgba(0,0,0,0.8);
 }
 
@@ -127,13 +150,13 @@ nav a:hover {
 
 .carousel-dots {
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
 }
 
 .dot {
-    height: 12px;
-    width: 12px;
-    margin: 0 5px;
+    height: 10px;
+    width: 10px;
+    margin: 0 4px;
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
@@ -145,35 +168,113 @@ nav a:hover {
     background-color: #2c1810;
 }
 
+/* Menu Section */
 .menu-section p {
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
 }
 
 .menu-btn {
     display: inline-block;
     background-color: #d4af37;
     color: white;
-    padding: 1rem 2rem;
+    padding: 0.75rem 1.5rem; /* Smaller padding */
     text-decoration: none;
     border-radius: 5px;
-    font-size: 1.1rem;
+    font-size: 1rem;
     transition: background-color 0.3s;
 }
 
-.menu-btn:hover {
+.menu-btn:hover,
+.menu-btn:focus {
     background-color: #b8941f;
 }
 
+/* Contact Section */
 .contact-section p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin-bottom: 0.5rem;
 }
 
+.contact-section a {
+    color: #d4af37;
+    text-decoration: none;
+}
+
+.contact-section a:hover,
+.contact-section a:focus {
+    text-decoration: underline;
+}
+
+/* Footer */
 footer {
     background-color: #2c1810;
     color: white;
     text-align: center;
-    padding: 2rem;
-    margin-top: 4rem;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+    nav {
+        flex-direction: row; /* Horizontal nav on larger screens */
+        max-width: 1200px;
+        padding: 0 2rem;
+    }
+
+    nav h1 {
+        font-size: 2rem;
+    }
+
+    nav a {
+        font-size: 1.1rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .hero {
+        min-height: 500px; /* Restore original height */
+    }
+
+    .hero-content h2 {
+        font-size: 3rem;
+    }
+
+    .hero-content p {
+        font-size: 1.5rem;
+    }
+
+    .carousel-section,
+    .menu-section,
+    .contact-section {
+        max-width: 1200px;
+        margin: 4rem auto;
+        padding: 0 2rem;
+    }
+
+    .carousel-section h2,
+    .menu-section h2,
+    .contact-section h2 {
+        font-size: 2.5rem;
+    }
+
+    .carousel-container {
+        max-width: 800px;
+    }
+
+    .carousel img {
+        height: 500px; /* Restore original height */
+    }
+
+    .carousel-btn {
+        padding: 1rem;
+        font-size: 1.5rem;
+        width: 50px;
+        height: 50px;
+    }
+
+    .menu-btn {
+        padding: 1rem 2rem;
+        font-size: 1.1rem;
+    }
 }
