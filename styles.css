@@ -239,13 +239,20 @@ footer {
     .hero {
         min-height: 500px; /* Restore original height */
     }
+.hero-content {
+    padding-top: 100px;
+    text-align: center;
+}
 
-    .hero-content h2 {
-        font-size: 3rem;
-    }
+.hero-content h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
 
-    .hero-content p {
-        font-size: 1.5rem;
+.hero-content p {
+    font-size: 1rem;
+    padding: 0 1rem;
+
     }
 
     .carousel-section,
